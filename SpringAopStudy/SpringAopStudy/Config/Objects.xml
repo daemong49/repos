@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net">
+  <object id="commander" type="SpringAopStudy.ServiceCommand, SpringAopStudy"/>
+  
+  <object id="LogAdvice" type="SpringAopStudy.Advices.CustomLoggingAdvice, SpringAopStudy"/>
+  <object id="BeforeLogAdvice" type="SpringAopStudy.Advices.CustomLoggingBeforeAdvice, SpringAopStudy"/>
+  <object id="AfterLogAdvice" type="SpringAopStudy.Advices.CustomLoggingAfterAdvice, SpringAopStudy"/>
+  <object id="ThrowsLogAdvice" type="SpringAopStudy.Advices.CustomLoggingThrowsAdvice, SpringAopStudy"/>
+
+ 
+  <object id="ProxyCreator2" type="Spring.Aop.Framework.AutoProxy.ObjectNameAutoProxyCreator, Spring.Aop">
+    <property name="ObjectNames">
+      <list>
+        <value>commander</value>
+      </list>
+    </property>
+    
+    <property name="InterceptorNames">
+      <list>
+        <value>exceptionHandlingAdvice</value>
+        <value>ThrowsLogAdvice</value>
+      </list>
+    </property>
+  </object>
+  
+  <object name="exceptionHandlingAdvice" type="Spring.Aspects.RetryAdvice, Spring.Aop">
+    <property name="retryExpression" value="on exception name FormatException retry 3x delay 1s"/>
+  </object>
+
+  <object id="AdoAdvisor" type="Spring.Aop.Support.RegularExpressionMethodPointcutAdvisor, Spring.Aop">
+    <property name="advice" ref="LogAdvice"/>
+    <property name="patterns">
+      <list>
+        <value>.*Execute</value>
+      </list>
+    </property>
+  </object>
+  <object id="ProxyCreator" type="Spring.Aop.Framework.AutoProxy.DefaultAdvisorAutoProxyCreator, Spring.Aop"/>
+</objects>
