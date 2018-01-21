@@ -1,0 +1,6 @@
+C:\Users\seong\source\repos\SpringAopStudy\SpringAopStudy.Core\bin\Debug\SpringAopStudy.Core.dll
+C:\Users\seong\source\repos\SpringAopStudy\SpringAopStudy.Core\bin\Debug\SpringAopStudy.Core.pdb
+C:\Users\seong\source\repos\SpringAopStudy\SpringAopStudy.Core\obj\Debug\SpringAopStudy.Core.csprojResolveAssemblyReference.cache
+C:\Users\seong\source\repos\SpringAopStudy\SpringAopStudy.Core\obj\Debug\SpringAopStudy.Core.csproj.CoreCompileInputs.cache
+C:\Users\seong\source\repos\SpringAopStudy\SpringAopStudy.Core\obj\Debug\SpringAopStudy.Core.dll
+C:\Users\seong\source\repos\SpringAopStudy\SpringAopStudy.Core\obj\Debug\SpringAopStudy.Core.pdb

@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 using Spring.Context.Support;
 using Spring.Core;
+using SpringAopStudy.Core;
+
+using SpringAopStudy.Object;
 
 namespace SpringAopStudy
 {
@@ -15,9 +18,14 @@ namespace SpringAopStudy
         {
             var context = ContextRegistry.GetContext();
             
-            var commander = context.GetObject<ICommand>("commander");
+            var commander = context.GetObject<ICommand<double>>("commander");
+            //var factory = context.GetObject<ObjectFactory<double>>("ObjFactory");
 
-            commander.Execute(DateTime.Now);
+            //var commander = factory.CreateInstance();
+            //commander.BusinessFunc = factory.BusinessCore.Send;
+            var result = commander.Execute(DateTime.Now.AddDays(-1));
+
+            Console.WriteLine($"result:{result}");
            
 
             

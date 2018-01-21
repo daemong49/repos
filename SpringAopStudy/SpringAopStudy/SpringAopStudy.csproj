@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Advices\CustomLoggingAdvice.cs" />
+    <Compile Include="Object\ObjectFactory.cs" />
     <Compile Include="Object\ServiceCommand.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -69,14 +70,21 @@
     <None Include="App.config" />
     <None Include="Config\log4net.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Config\Objects.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\SpringAopStudy.Core\SpringAopStudy.Core.csproj">
+      <Project>{f1fc9b4c-541a-4392-ade6-0e2463de22b2}</Project>
+      <Name>SpringAopStudy.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

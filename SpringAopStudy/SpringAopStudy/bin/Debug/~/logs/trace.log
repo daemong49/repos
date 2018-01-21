@@ -1,176 +1,72 @@
-[2018-01-21 02:43:27,808][1] DEBUG Spring.Context.Support.ContextHandler  - creating context 'spring.root'
-[2018-01-21 02:43:27,861][1] DEBUG Spring.Context.Support.XmlApplicationContext  - ApplicationContext Refresh: Refreshing object factory 
-[2018-01-21 02:43:27,911][1] DEBUG Spring.Objects.Factory.Xml.XmlObjectDefinitionReader  - Loading XML object definitions from file [c:\users\seong\source\repos\SpringAopStudy\SpringAopStudy\bin\Debug\Config\objects.xml]
-[2018-01-21 02:43:27,969][1] DEBUG Spring.Objects.Factory.Xml.XmlObjectDefinitionReader  - Using the following XmlReader implementation : System.Xml.XsdValidatingReader
-[2018-01-21 02:43:27,974][1] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader  - Loading object definitions.
-[2018-01-21 02:43:27,977][1] DEBUG Spring.Objects.Factory.Xml.ObjectDefinitionParserHelper  - Loading object definitions...
-[2018-01-21 02:43:27,978][1] DEBUG Spring.Objects.Factory.Xml.ObjectDefinitionParserHelper  - Default lazy init 'false'.
-[2018-01-21 02:43:27,978][1] DEBUG Spring.Objects.Factory.Xml.ObjectDefinitionParserHelper  - Default dependency check 'none'.
-[2018-01-21 02:43:27,978][1] DEBUG Spring.Objects.Factory.Xml.ObjectDefinitionParserHelper  - Default autowire 'no'.
-[2018-01-21 02:43:27,978][1] DEBUG Spring.Objects.Factory.Xml.ObjectDefinitionParserHelper  - Default merge 'false'.
-[2018-01-21 02:43:27,978][1] DEBUG Spring.Objects.Factory.Xml.ObjectDefinitionParserHelper  - Default init method ''.
-[2018-01-21 02:43:27,978][1] DEBUG Spring.Objects.Factory.Xml.ObjectDefinitionParserHelper  - Default destroy method ''.
-[2018-01-21 02:43:27,978][1] DEBUG Spring.Objects.Factory.Xml.ObjectDefinitionParserHelper  - Default autowire candidates ''.
-[2018-01-21 02:43:27,978][1] DEBUG Spring.Objects.Factory.Xml.ObjectDefinitionParserHelper  - Default init method ''.
-[2018-01-21 02:43:27,978][1] DEBUG Spring.Objects.Factory.Xml.ObjectDefinitionParserHelper  - Default destroy method ''.
-[2018-01-21 02:43:28,004][1] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader  - Registering object definition with id 'commander'.
-[2018-01-21 02:43:28,008][1] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader  - Registering object definition with id 'LogAdvice'.
-[2018-01-21 02:43:28,008][1] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader  - Registering object definition with id 'BeforeLogAdvice'.
-[2018-01-21 02:43:28,009][1] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader  - Registering object definition with id 'AfterLogAdvice'.
-[2018-01-21 02:43:28,009][1] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader  - Registering object definition with id 'ThrowsLogAdvice'.
-[2018-01-21 02:43:28,016][1] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader  - Registering object definition with id 'ProxyCreator2'.
-[2018-01-21 02:43:28,018][1] DEBUG Spring.Objects.Factory.Xml.ObjectDefinitionParserHelper  - No XML 'id' specified using 'exceptionHandlingAdvice' as object name and '' as aliases
-[2018-01-21 02:43:28,018][1] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader  - Registering object definition with id 'exceptionHandlingAdvice'.
-[2018-01-21 02:43:28,019][1] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader  - Registering object definition with id 'AdoAdvisor'.
-[2018-01-21 02:43:28,019][1] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader  - Registering object definition with id 'ProxyCreator'.
-[2018-01-21 02:43:28,019][1] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader  - Found 9 <object> elements defining objects.
-[2018-01-21 02:43:28,019][1] DEBUG Spring.Objects.Factory.Xml.XmlObjectDefinitionReader  - Loaded 9 object definitions from location [~/Config/objects.xml]
-[2018-01-21 02:43:28,020][1] DEBUG Spring.Context.Support.XmlApplicationContext  - Refreshed ObjectFactory for application context 'spring.root'.
-[2018-01-21 02:43:28,020][1] DEBUG Spring.Context.Support.XmlApplicationContext  - ApplicationContext Refresh: Registering well-known processors and objects
-[2018-01-21 02:43:28,022][1] DEBUG Spring.Context.Support.XmlApplicationContext  - ApplicationContext Refresh: Custom post processing object factory
-[2018-01-21 02:43:28,022][1] DEBUG Spring.Context.Support.XmlApplicationContext  - ApplicationContext Refresh: Post processing object factory using pre-registered processors
-[2018-01-21 02:43:28,023][1] DEBUG Spring.Context.Support.XmlApplicationContext  - 9 objects defined in application context [spring.root].
-[2018-01-21 02:43:28,023][1] DEBUG Spring.Context.Support.XmlApplicationContext  - ApplicationContext Refresh: Post processing object factory using defined processors
-[2018-01-21 02:43:28,053][1] DEBUG Spring.Context.Support.XmlApplicationContext  - processed 0 IFactoryObjectPostProcessors defined in application context [spring.root].
-[2018-01-21 02:43:28,060][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  -    GetObjectInternal: obtaining instance for name ProxyCreator2 => canonical name ProxyCreator2
-[2018-01-21 02:43:28,062][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Creating shared instance of singleton object 'ProxyCreator2'
-[2018-01-21 02:43:28,065][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Creating instance of Object 'ProxyCreator2' with merged definition [RootObjectDefinition : Class [Spring.Aop.Framework.AutoProxy.ObjectNameAutoProxyCreator]; Abstract = False; Parent = ; Scope = singleton; Singleton = True; LazyInit = False; Autowire = No; Autowire-Candidate = True; Primary = False; DependencyCheck = None; InitMethodName = ; DestroyMethodName = ; FactoryMethodName = ; FactoryObjectName = ; defined in = file [c:\users\seong\source\repos\SpringAopStudy\SpringAopStudy\bin\Debug\Config\objects.xml] line 11].
-[2018-01-21 02:43:28,066][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Invoking IInstantiationAwareObjectPostProcessors before the instantiation of 'ProxyCreator2'.
-[2018-01-21 02:43:28,071][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Eagerly caching object 'ProxyCreator2' to allow for resolving potential circular references
-[2018-01-21 02:43:28,072][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Configuring object using definition 'ProxyCreator2'
-[2018-01-21 02:43:28,143][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Setting the ObjectFactory property on the IObjectFactoryAware object 'ProxyCreator2'.
-[2018-01-21 02:43:28,144][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Invoking IObjectPostProcessors before initialization of object 'ProxyCreator2'
-[2018-01-21 02:43:28,146][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Invoking IObjectPostProcessors after initialization of object 'ProxyCreator2'
-[2018-01-21 02:43:28,146][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Cached shared instance of singleton object 'ProxyCreator2'
-[2018-01-21 02:43:28,148][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Calling code asked for normal instance for name 'ProxyCreator2'.
-[2018-01-21 02:43:28,149][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - GetObjectInternal: returning instance for objectname ProxyCreator2
-[2018-01-21 02:43:28,149][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  -    GetObjectInternal: obtaining instance for name ProxyCreator => canonical name ProxyCreator
-[2018-01-21 02:43:28,149][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Creating shared instance of singleton object 'ProxyCreator'
-[2018-01-21 02:43:28,149][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Creating instance of Object 'ProxyCreator' with merged definition [RootObjectDefinition : Class [Spring.Aop.Framework.AutoProxy.DefaultAdvisorAutoProxyCreator]; Abstract = False; Parent = ; Scope = singleton; Singleton = True; LazyInit = False; Autowire = No; Autowire-Candidate = True; Primary = False; DependencyCheck = None; InitMethodName = ; DestroyMethodName = ; FactoryMethodName = ; FactoryObjectName = ; defined in = file [c:\users\seong\source\repos\SpringAopStudy\SpringAopStudy\bin\Debug\Config\objects.xml] line 38].
-[2018-01-21 02:43:28,149][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Invoking IInstantiationAwareObjectPostProcessors before the instantiation of 'ProxyCreator'.
-[2018-01-21 02:43:28,150][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Eagerly caching object 'ProxyCreator' to allow for resolving potential circular references
-[2018-01-21 02:43:28,150][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Configuring object using definition 'ProxyCreator'
-[2018-01-21 02:43:28,150][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Setting the name property on the IObjectNameAware object 'ProxyCreator'.
-[2018-01-21 02:43:28,150][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Setting the ObjectFactory property on the IObjectFactoryAware object 'ProxyCreator'.
-[2018-01-21 02:43:28,151][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Invoking IObjectPostProcessors before initialization of object 'ProxyCreator'
-[2018-01-21 02:43:28,151][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Calling AfterPropertiesSet() on object with name 'ProxyCreator'.
-[2018-01-21 02:43:28,156][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  -       GetObjectInternal: obtaining instance for name AdoAdvisor => canonical name AdoAdvisor
-[2018-01-21 02:43:28,156][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Creating shared instance of singleton object 'AdoAdvisor'
-[2018-01-21 02:43:28,156][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Creating instance of Object 'AdoAdvisor' with merged definition [RootObjectDefinition : Class [Spring.Aop.Support.RegularExpressionMethodPointcutAdvisor]; Abstract = False; Parent = ; Scope = singleton; Singleton = True; LazyInit = False; Autowire = No; Autowire-Candidate = True; Primary = False; DependencyCheck = None; InitMethodName = ; DestroyMethodName = ; FactoryMethodName = ; FactoryObjectName = ; defined in = file [c:\users\seong\source\repos\SpringAopStudy\SpringAopStudy\bin\Debug\Config\objects.xml] line 30].
-[2018-01-21 02:43:28,156][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Invoking IInstantiationAwareObjectPostProcessors before the instantiation of 'AdoAdvisor'.
-[2018-01-21 02:43:28,158][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Eagerly caching object 'AdoAdvisor' to allow for resolving potential circular references
-[2018-01-21 02:43:28,158][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Configuring object using definition 'AdoAdvisor'
-[2018-01-21 02:43:28,159][1] DEBUG Spring.Objects.Factory.Support.ObjectDefinitionValueResolver  - Resolving reference from property 'advice' in object 'AdoAdvisor' to object 'LogAdvice'.
-[2018-01-21 02:43:28,159][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  -          GetObjectInternal: obtaining instance for name LogAdvice => canonical name LogAdvice
-[2018-01-21 02:43:28,159][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Creating shared instance of singleton object 'LogAdvice'
-[2018-01-21 02:43:28,159][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Creating instance of Object 'LogAdvice' with merged definition [RootObjectDefinition : Class [SpringAopStudy.Advices.CustomLoggingAdvice]; Abstract = False; Parent = ; Scope = singleton; Singleton = True; LazyInit = False; Autowire = No; Autowire-Candidate = True; Primary = False; DependencyCheck = None; InitMethodName = ; DestroyMethodName = ; FactoryMethodName = ; FactoryObjectName = ; defined in = file [c:\users\seong\source\repos\SpringAopStudy\SpringAopStudy\bin\Debug\Config\objects.xml] line 5].
-[2018-01-21 02:43:28,159][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Invoking IInstantiationAwareObjectPostProcessors before the instantiation of 'LogAdvice'.
-[2018-01-21 02:43:28,160][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Eagerly caching object 'LogAdvice' to allow for resolving potential circular references
-[2018-01-21 02:43:28,160][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Configuring object using definition 'LogAdvice'
-[2018-01-21 02:43:28,160][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Invoking IObjectPostProcessors before initialization of object 'LogAdvice'
-[2018-01-21 02:43:28,160][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Invoking IObjectPostProcessors after initialization of object 'LogAdvice'
-[2018-01-21 02:43:28,160][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Cached shared instance of singleton object 'LogAdvice'
-[2018-01-21 02:43:28,160][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Calling code asked for normal instance for name 'LogAdvice'.
-[2018-01-21 02:43:28,160][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  -       GetObjectInternal: returning instance for objectname LogAdvice
-[2018-01-21 02:43:28,162][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Invoking IObjectPostProcessors before initialization of object 'AdoAdvisor'
-[2018-01-21 02:43:28,162][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Invoking IObjectPostProcessors after initialization of object 'AdoAdvisor'
-[2018-01-21 02:43:28,162][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Cached shared instance of singleton object 'AdoAdvisor'
-[2018-01-21 02:43:28,162][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Calling code asked for normal instance for name 'AdoAdvisor'.
-[2018-01-21 02:43:28,162][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  -    GetObjectInternal: returning instance for objectname AdoAdvisor
-[2018-01-21 02:43:28,162][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Invoking IObjectPostProcessors after initialization of object 'ProxyCreator'
-[2018-01-21 02:43:28,162][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Cached shared instance of singleton object 'ProxyCreator'
-[2018-01-21 02:43:28,162][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Calling code asked for normal instance for name 'ProxyCreator'.
-[2018-01-21 02:43:28,162][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - GetObjectInternal: returning instance for objectname ProxyCreator
-[2018-01-21 02:43:28,163][1] DEBUG Spring.Context.Support.XmlApplicationContext  - processed 2 IObjectPostProcessors defined in application context [spring.root].
-[2018-01-21 02:43:28,165][1] DEBUG Spring.Context.Support.XmlApplicationContext  - No IEventRegistry found with name 'eventRegistry' : using default 'Spring.Objects.Events.Support.EventRegistry'.
-[2018-01-21 02:43:28,170][1] DEBUG Spring.Context.Support.XmlApplicationContext  - No IMessageSource found with name 'messageSource' : using default 'StaticMessageSource : '.
-[2018-01-21 02:43:28,171][1] DEBUG Spring.Context.Support.XmlApplicationContext  - ApplicationContext Refresh: Preinstantiating singletons
-[2018-01-21 02:43:28,172][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Pre-instantiating singletons in factory [Spring.Objects.Factory.Support.DefaultListableObjectFactory]
-[2018-01-21 02:43:28,172][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  -    GetObjectInternal: obtaining instance for name commander => canonical name commander
-[2018-01-21 02:43:28,173][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Creating shared instance of singleton object 'commander'
-[2018-01-21 02:43:28,173][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Creating instance of Object 'commander' with merged definition [RootObjectDefinition : Class [SpringAopStudy.ServiceCommand]; Abstract = False; Parent = ; Scope = singleton; Singleton = True; LazyInit = False; Autowire = No; Autowire-Candidate = True; Primary = False; DependencyCheck = None; InitMethodName = ; DestroyMethodName = ; FactoryMethodName = ; FactoryObjectName = ; defined in = file [c:\users\seong\source\repos\SpringAopStudy\SpringAopStudy\bin\Debug\Config\objects.xml] line 3].
-[2018-01-21 02:43:28,173][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Invoking IInstantiationAwareObjectPostProcessors before the instantiation of 'commander'.
-[2018-01-21 02:43:28,177][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Eagerly caching object 'commander' to allow for resolving potential circular references
-[2018-01-21 02:43:28,177][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Configuring object using definition 'commander'
-[2018-01-21 02:43:28,178][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Invoking IObjectPostProcessors before initialization of object 'commander'
-[2018-01-21 02:43:28,178][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Invoking IObjectPostProcessors after initialization of object 'commander'
-[2018-01-21 02:43:28,186][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  -       GetObjectInternal: obtaining instance for name exceptionHandlingAdvice => canonical name exceptionHandlingAdvice
-[2018-01-21 02:43:28,186][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Creating shared instance of singleton object 'exceptionHandlingAdvice'
-[2018-01-21 02:43:28,186][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Creating instance of Object 'exceptionHandlingAdvice' with merged definition [RootObjectDefinition : Class [Spring.Aspects.RetryAdvice]; Abstract = False; Parent = ; Scope = singleton; Singleton = True; LazyInit = False; Autowire = No; Autowire-Candidate = True; Primary = False; DependencyCheck = None; InitMethodName = ; DestroyMethodName = ; FactoryMethodName = ; FactoryObjectName = ; defined in = file [c:\users\seong\source\repos\SpringAopStudy\SpringAopStudy\bin\Debug\Config\objects.xml] line 26].
-[2018-01-21 02:43:28,186][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Invoking IInstantiationAwareObjectPostProcessors before the instantiation of 'exceptionHandlingAdvice'.
-[2018-01-21 02:43:28,186][1] DEBUG Spring.Aop.Framework.AutoProxy.ObjectNameAutoProxyCreator  - Did not attempt to autoproxy infrastructure type [Spring.Aspects.RetryAdvice]
-[2018-01-21 02:43:28,186][1] DEBUG Spring.Aop.Framework.AutoProxy.DefaultAdvisorAutoProxyCreator  - Did not attempt to autoproxy infrastructure type [Spring.Aspects.RetryAdvice]
-[2018-01-21 02:43:28,187][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Eagerly caching object 'exceptionHandlingAdvice' to allow for resolving potential circular references
-[2018-01-21 02:43:28,187][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Configuring object using definition 'exceptionHandlingAdvice'
-[2018-01-21 02:43:28,188][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Invoking IObjectPostProcessors before initialization of object 'exceptionHandlingAdvice'
-[2018-01-21 02:43:28,188][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Calling AfterPropertiesSet() on object with name 'exceptionHandlingAdvice'.
-[2018-01-21 02:43:28,195][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Invoking IObjectPostProcessors after initialization of object 'exceptionHandlingAdvice'
-[2018-01-21 02:43:28,195][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Cached shared instance of singleton object 'exceptionHandlingAdvice'
-[2018-01-21 02:43:28,195][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Calling code asked for normal instance for name 'exceptionHandlingAdvice'.
-[2018-01-21 02:43:28,195][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  -    GetObjectInternal: returning instance for objectname exceptionHandlingAdvice
-[2018-01-21 02:43:28,196][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  -       GetObjectInternal: obtaining instance for name ThrowsLogAdvice => canonical name ThrowsLogAdvice
-[2018-01-21 02:43:28,197][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Creating shared instance of singleton object 'ThrowsLogAdvice'
-[2018-01-21 02:43:28,197][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Creating instance of Object 'ThrowsLogAdvice' with merged definition [RootObjectDefinition : Class [SpringAopStudy.Advices.CustomLoggingThrowsAdvice]; Abstract = False; Parent = ; Scope = singleton; Singleton = True; LazyInit = False; Autowire = No; Autowire-Candidate = True; Primary = False; DependencyCheck = None; InitMethodName = ; DestroyMethodName = ; FactoryMethodName = ; FactoryObjectName = ; defined in = file [c:\users\seong\source\repos\SpringAopStudy\SpringAopStudy\bin\Debug\Config\objects.xml] line 8].
-[2018-01-21 02:43:28,197][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Invoking IInstantiationAwareObjectPostProcessors before the instantiation of 'ThrowsLogAdvice'.
-[2018-01-21 02:43:28,197][1] DEBUG Spring.Aop.Framework.AutoProxy.ObjectNameAutoProxyCreator  - Did not attempt to autoproxy infrastructure type [SpringAopStudy.Advices.CustomLoggingThrowsAdvice]
-[2018-01-21 02:43:28,197][1] DEBUG Spring.Aop.Framework.AutoProxy.DefaultAdvisorAutoProxyCreator  - Did not attempt to autoproxy infrastructure type [SpringAopStudy.Advices.CustomLoggingThrowsAdvice]
-[2018-01-21 02:43:28,197][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Eagerly caching object 'ThrowsLogAdvice' to allow for resolving potential circular references
-[2018-01-21 02:43:28,197][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Configuring object using definition 'ThrowsLogAdvice'
-[2018-01-21 02:43:28,197][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Invoking IObjectPostProcessors before initialization of object 'ThrowsLogAdvice'
-[2018-01-21 02:43:28,197][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Invoking IObjectPostProcessors after initialization of object 'ThrowsLogAdvice'
-[2018-01-21 02:43:28,197][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Cached shared instance of singleton object 'ThrowsLogAdvice'
-[2018-01-21 02:43:28,197][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Calling code asked for normal instance for name 'ThrowsLogAdvice'.
-[2018-01-21 02:43:28,197][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  -    GetObjectInternal: returning instance for objectname ThrowsLogAdvice
-[2018-01-21 02:43:28,198][1] INFO  Spring.Aop.Framework.AutoProxy.ObjectNameAutoProxyCreator  - Creating implicit proxy for object 'commander' with 2 common interceptors and 0 specific interceptors
-[2018-01-21 02:43:28,251][1] DEBUG Spring.Aop.Support.SdkRegularExpressionMethodPointcut  - Candidate is: 'CompositionAopProxy_5016835959a94463afeaf20cab567fe4.Execute'; pattern is '.*Execute'; matched=True
-[2018-01-21 02:43:28,251][1] INFO  Spring.Aop.Framework.AutoProxy.DefaultAdvisorAutoProxyCreator  - Candidate advisor [RegularExpressionMethodPointcutAdvisor: advice=[SpringAopStudy.Advices.CustomLoggingAdvice]] accepted for targetType [CompositionAopProxy_5016835959a94463afeaf20cab567fe4]
-[2018-01-21 02:43:28,252][1] INFO  Spring.Aop.Framework.AutoProxy.DefaultAdvisorAutoProxyCreator  - Creating implicit proxy for object 'commander' with 0 common interceptors and 1 specific interceptors
-[2018-01-21 02:43:28,256][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Cached shared instance of singleton object 'commander'
-[2018-01-21 02:43:28,256][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Calling code asked for normal instance for name 'commander'.
-[2018-01-21 02:43:28,256][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - GetObjectInternal: returning instance for objectname commander
-[2018-01-21 02:43:28,256][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  -    GetObjectInternal: obtaining instance for name BeforeLogAdvice => canonical name BeforeLogAdvice
-[2018-01-21 02:43:28,256][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Creating shared instance of singleton object 'BeforeLogAdvice'
-[2018-01-21 02:43:28,256][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Creating instance of Object 'BeforeLogAdvice' with merged definition [RootObjectDefinition : Class [SpringAopStudy.Advices.CustomLoggingBeforeAdvice]; Abstract = False; Parent = ; Scope = singleton; Singleton = True; LazyInit = False; Autowire = No; Autowire-Candidate = True; Primary = False; DependencyCheck = None; InitMethodName = ; DestroyMethodName = ; FactoryMethodName = ; FactoryObjectName = ; defined in = file [c:\users\seong\source\repos\SpringAopStudy\SpringAopStudy\bin\Debug\Config\objects.xml] line 6].
-[2018-01-21 02:43:28,256][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Invoking IInstantiationAwareObjectPostProcessors before the instantiation of 'BeforeLogAdvice'.
-[2018-01-21 02:43:28,257][1] DEBUG Spring.Aop.Framework.AutoProxy.ObjectNameAutoProxyCreator  - Did not attempt to autoproxy infrastructure type [SpringAopStudy.Advices.CustomLoggingBeforeAdvice]
-[2018-01-21 02:43:28,257][1] DEBUG Spring.Aop.Framework.AutoProxy.DefaultAdvisorAutoProxyCreator  - Did not attempt to autoproxy infrastructure type [SpringAopStudy.Advices.CustomLoggingBeforeAdvice]
-[2018-01-21 02:43:28,258][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Eagerly caching object 'BeforeLogAdvice' to allow for resolving potential circular references
-[2018-01-21 02:43:28,258][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Configuring object using definition 'BeforeLogAdvice'
-[2018-01-21 02:43:28,258][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Invoking IObjectPostProcessors before initialization of object 'BeforeLogAdvice'
-[2018-01-21 02:43:28,258][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Invoking IObjectPostProcessors after initialization of object 'BeforeLogAdvice'
-[2018-01-21 02:43:28,258][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Cached shared instance of singleton object 'BeforeLogAdvice'
-[2018-01-21 02:43:28,258][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Calling code asked for normal instance for name 'BeforeLogAdvice'.
-[2018-01-21 02:43:28,258][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - GetObjectInternal: returning instance for objectname BeforeLogAdvice
-[2018-01-21 02:43:28,258][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  -    GetObjectInternal: obtaining instance for name AfterLogAdvice => canonical name AfterLogAdvice
-[2018-01-21 02:43:28,258][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Creating shared instance of singleton object 'AfterLogAdvice'
-[2018-01-21 02:43:28,258][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Creating instance of Object 'AfterLogAdvice' with merged definition [RootObjectDefinition : Class [SpringAopStudy.Advices.CustomLoggingAfterAdvice]; Abstract = False; Parent = ; Scope = singleton; Singleton = True; LazyInit = False; Autowire = No; Autowire-Candidate = True; Primary = False; DependencyCheck = None; InitMethodName = ; DestroyMethodName = ; FactoryMethodName = ; FactoryObjectName = ; defined in = file [c:\users\seong\source\repos\SpringAopStudy\SpringAopStudy\bin\Debug\Config\objects.xml] line 7].
-[2018-01-21 02:43:28,258][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Invoking IInstantiationAwareObjectPostProcessors before the instantiation of 'AfterLogAdvice'.
-[2018-01-21 02:43:28,258][1] DEBUG Spring.Aop.Framework.AutoProxy.ObjectNameAutoProxyCreator  - Did not attempt to autoproxy infrastructure type [SpringAopStudy.Advices.CustomLoggingAfterAdvice]
-[2018-01-21 02:43:28,259][1] DEBUG Spring.Aop.Framework.AutoProxy.DefaultAdvisorAutoProxyCreator  - Did not attempt to autoproxy infrastructure type [SpringAopStudy.Advices.CustomLoggingAfterAdvice]
-[2018-01-21 02:43:28,259][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Eagerly caching object 'AfterLogAdvice' to allow for resolving potential circular references
-[2018-01-21 02:43:28,259][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Configuring object using definition 'AfterLogAdvice'
-[2018-01-21 02:43:28,259][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Invoking IObjectPostProcessors before initialization of object 'AfterLogAdvice'
-[2018-01-21 02:43:28,259][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Invoking IObjectPostProcessors after initialization of object 'AfterLogAdvice'
-[2018-01-21 02:43:28,259][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Cached shared instance of singleton object 'AfterLogAdvice'
-[2018-01-21 02:43:28,259][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Calling code asked for normal instance for name 'AfterLogAdvice'.
-[2018-01-21 02:43:28,259][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - GetObjectInternal: returning instance for objectname AfterLogAdvice
-[2018-01-21 02:43:28,260][1] DEBUG Spring.Context.Support.XmlApplicationContext  - Publishing event in context [spring.root] : ContextRefreshedEventArgs [Refreshed]
-[2018-01-21 02:43:28,262][1] INFO  Spring.Context.Support.XmlApplicationContext  - ApplicationContext Refresh: Completed
-[2018-01-21 02:43:28,264][1] DEBUG Spring.Context.Support.ContextRegistry  - Registering context 'Spring.Context.Support.XmlApplicationContext' under name 'spring.root'.
-[2018-01-21 02:43:28,265][1] DEBUG Spring.Context.Support.ContextHandler  - context 'Spring.Context.Support.XmlApplicationContext' created for name 'spring.root'
-[2018-01-21 02:43:28,266][1] DEBUG Spring.Context.Support.ContextRegistry  - Returning context 'Spring.Context.Support.XmlApplicationContext' registered under name 'spring.root'.
-[2018-01-21 02:43:28,266][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  -    GetObjectInternal: obtaining instance for name commander => canonical name commander
-[2018-01-21 02:43:28,266][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Returning cached instance of singleton object 'commander'.
-[2018-01-21 02:43:28,266][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Calling code asked for normal instance for name 'commander'.
-[2018-01-21 02:43:28,266][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - GetObjectInternal: returning instance for objectname commander
-[2018-01-21 02:43:28,269][1] DEBUG Spring.Aop.Support.SdkRegularExpressionMethodPointcut  - Candidate is: 'CompositionAopProxy_5016835959a94463afeaf20cab567fe4.Execute'; pattern is '.*Execute'; matched=True
-[2018-01-21 02:43:28,272][1] INFO  SpringAopStudy.Advices.CustomLoggingAdvice  - Advice executing: calling the advice method...
-[2018-01-21 02:43:28,278][1] DEBUG Spring.Aop.Framework.Adapter.ThrowsAdviceInterceptor  - Found exception handler method: Void AfterThrowing(System.IndexOutOfRangeException)
-[2018-01-21 02:43:28,278][1] DEBUG Spring.Aop.Framework.Adapter.ThrowsAdviceInterceptor  - Found exception handler method: Void AfterThrowing(System.FormatException)
-[2018-01-21 02:43:32,390][1] DEBUG Spring.Aop.Framework.Adapter.ThrowsAdviceInterceptor  - Trying to find handler for exception of type [FormatException].
-[2018-01-21 02:43:32,391][1] ERROR SpringAopStudy.Advices.CustomLoggingThrowsAdvice  - FormatException
-[2018-01-21 02:43:33,685][1] DEBUG Spring.Aop.Framework.Adapter.ThrowsAdviceInterceptor  - Trying to find handler for exception of type [FormatException].
-[2018-01-21 02:43:33,685][1] ERROR SpringAopStudy.Advices.CustomLoggingThrowsAdvice  - FormatException
-[2018-01-21 02:43:34,925][1] DEBUG Spring.Aop.Framework.Adapter.ThrowsAdviceInterceptor  - Trying to find handler for exception of type [FormatException].
-[2018-01-21 02:43:34,925][1] ERROR SpringAopStudy.Advices.CustomLoggingThrowsAdvice  - FormatException
-[2018-01-21 02:43:34,952][1] INFO  SpringAopStudy.Advices.CustomLoggingAdvice  - Advice executed: adviced method returned 
+[2018-01-21 15:06:50,606][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  -    GetObjectInternal: obtaining instance for name commander => canonical name commander
+[2018-01-21 15:06:50,918][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Creating shared instance of singleton object 'commander'
+[2018-01-21 15:06:50,918][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Creating instance of Object 'commander' with merged definition [RootObjectDefinition : Class []; Abstract = False; Parent = ; Scope = singleton; Singleton = True; LazyInit = False; Autowire = No; Autowire-Candidate = True; Primary = False; DependencyCheck = None; InitMethodName = ; DestroyMethodName = ; FactoryMethodName = CreateInstance; FactoryObjectName = ObjFactory; defined in = file [C:\Users\seong\source\repos\SpringAopStudy\SpringAopStudy\bin\Debug\Config\objects.xml] line 10].
+[2018-01-21 15:06:50,918][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  -       GetObjectInternal: obtaining instance for name ObjFactory => canonical name ObjFactory
+[2018-01-21 15:06:50,918][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Returning cached instance of singleton object 'ObjFactory'.
+[2018-01-21 15:06:50,918][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Calling code asked for normal instance for name 'ObjFactory'.
+[2018-01-21 15:06:50,918][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  -    GetObjectInternal: returning instance for objectname ObjFactory
+[2018-01-21 15:06:50,934][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  -       GetObjectInternal: obtaining instance for name ObjFactory => canonical name ObjFactory
+[2018-01-21 15:06:50,934][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Returning cached instance of singleton object 'ObjFactory'.
+[2018-01-21 15:06:50,934][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Calling code asked for normal instance for name 'ObjFactory'.
+[2018-01-21 15:06:50,934][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  -    GetObjectInternal: returning instance for objectname ObjFactory
+[2018-01-21 15:06:50,934][1] DEBUG Spring.Objects.Factory.Support.ConstructorResolver  - Object 'commander' instantiated via factory method [SpringAopStudy.ServiceCommand`1[System.Double] CreateInstance()].
+[2018-01-21 15:06:50,934][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Eagerly caching object 'commander' to allow for resolving potential circular references
+[2018-01-21 15:06:50,934][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Configuring object using definition 'commander'
+[2018-01-21 15:06:50,934][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Invoking IObjectPostProcessors before initialization of object 'commander'
+[2018-01-21 15:06:50,934][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Invoking IObjectPostProcessors after initialization of object 'commander'
+[2018-01-21 15:06:50,934][1] DEBUG Spring.Aop.Support.SdkRegularExpressionMethodPointcut  - Candidate is: 'SpringAopStudy.ServiceCommand<double>.get_BusinessFunc'; pattern is 'Execute'; matched=False
+[2018-01-21 15:06:50,934][1] DEBUG Spring.Aop.Support.SdkRegularExpressionMethodPointcut  - Candidate is: 'SpringAopStudy.ServiceCommand<double>.set_BusinessFunc'; pattern is 'Execute'; matched=False
+[2018-01-21 15:06:50,934][1] DEBUG Spring.Aop.Support.SdkRegularExpressionMethodPointcut  - Candidate is: 'SpringAopStudy.ServiceCommand<double>.Execute'; pattern is 'Execute'; matched=True
+[2018-01-21 15:06:50,934][1] INFO  Spring.Aop.Framework.AutoProxy.DefaultAdvisorAutoProxyCreator  - Candidate advisor [RegularExpressionMethodPointcutAdvisor: advice=[SpringAopStudy.Advices.CustomLoggingAdvice]] accepted for targetType [SpringAopStudy.ServiceCommand`1[System.Double]]
+[2018-01-21 15:06:50,950][1] INFO  Spring.Aop.Framework.AutoProxy.DefaultAdvisorAutoProxyCreator  - Creating implicit proxy for object 'commander' with 0 common interceptors and 1 specific interceptors
+[2018-01-21 15:06:51,026][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Cached shared instance of singleton object 'commander'
+[2018-01-21 15:06:51,026][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Calling code asked for normal instance for name 'commander'.
+[2018-01-21 15:06:51,026][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - GetObjectInternal: returning instance for objectname commander
+[2018-01-21 15:06:51,026][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  -    GetObjectInternal: obtaining instance for name BeforeLogAdvice => canonical name BeforeLogAdvice
+[2018-01-21 15:06:51,026][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Creating shared instance of singleton object 'BeforeLogAdvice'
+[2018-01-21 15:06:51,026][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Creating instance of Object 'BeforeLogAdvice' with merged definition [RootObjectDefinition : Class [SpringAopStudy.Advices.CustomLoggingBeforeAdvice]; Abstract = False; Parent = ; Scope = singleton; Singleton = True; LazyInit = False; Autowire = No; Autowire-Candidate = True; Primary = False; DependencyCheck = None; InitMethodName = ; DestroyMethodName = ; FactoryMethodName = ; FactoryObjectName = ; defined in = file [C:\Users\seong\source\repos\SpringAopStudy\SpringAopStudy\bin\Debug\Config\objects.xml] line 14].
+[2018-01-21 15:06:51,026][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Invoking IInstantiationAwareObjectPostProcessors before the instantiation of 'BeforeLogAdvice'.
+[2018-01-21 15:06:51,026][1] DEBUG Spring.Aop.Framework.AutoProxy.DefaultAdvisorAutoProxyCreator  - Did not attempt to autoproxy infrastructure type [SpringAopStudy.Advices.CustomLoggingBeforeAdvice]
+[2018-01-21 15:06:51,027][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Eagerly caching object 'BeforeLogAdvice' to allow for resolving potential circular references
+[2018-01-21 15:06:51,027][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Configuring object using definition 'BeforeLogAdvice'
+[2018-01-21 15:06:51,027][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Invoking IObjectPostProcessors before initialization of object 'BeforeLogAdvice'
+[2018-01-21 15:06:51,027][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Invoking IObjectPostProcessors after initialization of object 'BeforeLogAdvice'
+[2018-01-21 15:06:51,027][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Cached shared instance of singleton object 'BeforeLogAdvice'
+[2018-01-21 15:06:51,027][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Calling code asked for normal instance for name 'BeforeLogAdvice'.
+[2018-01-21 15:06:51,027][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - GetObjectInternal: returning instance for objectname BeforeLogAdvice
+[2018-01-21 15:06:51,027][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  -    GetObjectInternal: obtaining instance for name AfterLogAdvice => canonical name AfterLogAdvice
+[2018-01-21 15:06:51,027][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Creating shared instance of singleton object 'AfterLogAdvice'
+[2018-01-21 15:06:51,027][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Creating instance of Object 'AfterLogAdvice' with merged definition [RootObjectDefinition : Class [SpringAopStudy.Advices.CustomLoggingAfterAdvice]; Abstract = False; Parent = ; Scope = singleton; Singleton = True; LazyInit = False; Autowire = No; Autowire-Candidate = True; Primary = False; DependencyCheck = None; InitMethodName = ; DestroyMethodName = ; FactoryMethodName = ; FactoryObjectName = ; defined in = file [C:\Users\seong\source\repos\SpringAopStudy\SpringAopStudy\bin\Debug\Config\objects.xml] line 15].
+[2018-01-21 15:06:51,027][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Invoking IInstantiationAwareObjectPostProcessors before the instantiation of 'AfterLogAdvice'.
+[2018-01-21 15:06:51,027][1] DEBUG Spring.Aop.Framework.AutoProxy.DefaultAdvisorAutoProxyCreator  - Did not attempt to autoproxy infrastructure type [SpringAopStudy.Advices.CustomLoggingAfterAdvice]
+[2018-01-21 15:06:51,028][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Eagerly caching object 'AfterLogAdvice' to allow for resolving potential circular references
+[2018-01-21 15:06:51,028][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Configuring object using definition 'AfterLogAdvice'
+[2018-01-21 15:06:51,028][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Invoking IObjectPostProcessors before initialization of object 'AfterLogAdvice'
+[2018-01-21 15:06:51,028][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Invoking IObjectPostProcessors after initialization of object 'AfterLogAdvice'
+[2018-01-21 15:06:51,028][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Cached shared instance of singleton object 'AfterLogAdvice'
+[2018-01-21 15:06:51,028][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Calling code asked for normal instance for name 'AfterLogAdvice'.
+[2018-01-21 15:06:51,028][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - GetObjectInternal: returning instance for objectname AfterLogAdvice
+[2018-01-21 15:06:51,028][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  -    GetObjectInternal: obtaining instance for name ThrowsLogAdvice => canonical name ThrowsLogAdvice
+[2018-01-21 15:06:51,028][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Creating shared instance of singleton object 'ThrowsLogAdvice'
+[2018-01-21 15:06:51,028][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Creating instance of Object 'ThrowsLogAdvice' with merged definition [RootObjectDefinition : Class [SpringAopStudy.Advices.CustomLoggingThrowsAdvice]; Abstract = False; Parent = ; Scope = singleton; Singleton = True; LazyInit = False; Autowire = No; Autowire-Candidate = True; Primary = False; DependencyCheck = None; InitMethodName = ; DestroyMethodName = ; FactoryMethodName = ; FactoryObjectName = ; defined in = file [C:\Users\seong\source\repos\SpringAopStudy\SpringAopStudy\bin\Debug\Config\objects.xml] line 16].
+[2018-01-21 15:06:51,028][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Invoking IInstantiationAwareObjectPostProcessors before the instantiation of 'ThrowsLogAdvice'.
+[2018-01-21 15:06:51,028][1] DEBUG Spring.Aop.Framework.AutoProxy.DefaultAdvisorAutoProxyCreator  - Did not attempt to autoproxy infrastructure type [SpringAopStudy.Advices.CustomLoggingThrowsAdvice]
+[2018-01-21 15:06:51,029][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Eagerly caching object 'ThrowsLogAdvice' to allow for resolving potential circular references
+[2018-01-21 15:06:51,029][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Configuring object using definition 'ThrowsLogAdvice'
+[2018-01-21 15:06:51,029][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Invoking IObjectPostProcessors before initialization of object 'ThrowsLogAdvice'
+[2018-01-21 15:06:51,029][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Invoking IObjectPostProcessors after initialization of object 'ThrowsLogAdvice'
+[2018-01-21 15:06:51,029][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Cached shared instance of singleton object 'ThrowsLogAdvice'
+[2018-01-21 15:06:51,029][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Calling code asked for normal instance for name 'ThrowsLogAdvice'.
+[2018-01-21 15:06:51,029][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - GetObjectInternal: returning instance for objectname ThrowsLogAdvice
+[2018-01-21 15:06:51,030][1] DEBUG Spring.Context.Support.XmlApplicationContext  - Publishing event in context [spring.root] : ContextRefreshedEventArgs [Refreshed]
+[2018-01-21 15:06:51,032][1] INFO  Spring.Context.Support.XmlApplicationContext  - ApplicationContext Refresh: Completed
+[2018-01-21 15:06:51,034][1] DEBUG Spring.Context.Support.ContextRegistry  - Registering context 'Spring.Context.Support.XmlApplicationContext' under name 'spring.root'.
+[2018-01-21 15:06:51,035][1] DEBUG Spring.Context.Support.ContextHandler  - context 'Spring.Context.Support.XmlApplicationContext' created for name 'spring.root'
+[2018-01-21 15:06:51,036][1] DEBUG Spring.Context.Support.ContextRegistry  - Returning context 'Spring.Context.Support.XmlApplicationContext' registered under name 'spring.root'.
+[2018-01-21 15:06:51,036][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  -    GetObjectInternal: obtaining instance for name commander => canonical name commander
+[2018-01-21 15:06:51,036][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Returning cached instance of singleton object 'commander'.
+[2018-01-21 15:06:51,036][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - Calling code asked for normal instance for name 'commander'.
+[2018-01-21 15:06:51,036][1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory  - GetObjectInternal: returning instance for objectname commander
+[2018-01-21 15:06:51,041][1] DEBUG Spring.Aop.Support.SdkRegularExpressionMethodPointcut  - Candidate is: 'SpringAopStudy.ServiceCommand<double>.Execute'; pattern is 'Execute'; matched=True
+[2018-01-21 15:06:51,044][1] INFO  SpringAopStudy.Advices.CustomLoggingAdvice  - Advice executing: calling the advice method...
+[2018-01-21 15:06:51,054][1] INFO  SpringAopStudy.Advices.CustomLoggingAdvice  - Advice executed: adviced method returned 24.0000050114167

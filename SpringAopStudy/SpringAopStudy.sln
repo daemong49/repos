@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.27130.2020
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpringAopStudy", "SpringAopStudy\SpringAopStudy.csproj", "{1B5E3FAE-B6A9-4F32-9A1B-ED31AD96841C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpringAopStudy.Core", "SpringAopStudy.Core\SpringAopStudy.Core.csproj", "{F1FC9B4C-541A-4392-ADE6-0E2463DE22B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpringAopStudy.Core.Implements", "SpringAopStudy.Core.Implements\SpringAopStudy.Core.Implements.csproj", "{BFE26716-C954-4A99-8A79-81AADBB97B57}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{1B5E3FAE-B6A9-4F32-9A1B-ED31AD96841C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B5E3FAE-B6A9-4F32-9A1B-ED31AD96841C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1B5E3FAE-B6A9-4F32-9A1B-ED31AD96841C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1FC9B4C-541A-4392-ADE6-0E2463DE22B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1FC9B4C-541A-4392-ADE6-0E2463DE22B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1FC9B4C-541A-4392-ADE6-0E2463DE22B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1FC9B4C-541A-4392-ADE6-0E2463DE22B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFE26716-C954-4A99-8A79-81AADBB97B57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFE26716-C954-4A99-8A79-81AADBB97B57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFE26716-C954-4A99-8A79-81AADBB97B57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFE26716-C954-4A99-8A79-81AADBB97B57}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

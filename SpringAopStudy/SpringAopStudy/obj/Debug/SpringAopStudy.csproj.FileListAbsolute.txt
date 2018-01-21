@@ -24,3 +24,5 @@ c:\users\seong\source\repos\SpringAopStudy\SpringAopStudy\obj\Debug\SpringAopStu
 c:\users\seong\source\repos\SpringAopStudy\SpringAopStudy\obj\Debug\SpringAopStudy.pdb
 c:\users\seong\source\repos\SpringAopStudy\SpringAopStudy\bin\Debug\Config\Objects.xml
 c:\users\seong\source\repos\SpringAopStudy\SpringAopStudy\bin\Debug\Config\log4net.config
+C:\Users\seong\source\repos\SpringAopStudy\SpringAopStudy\bin\Debug\SpringAopStudy.Core.dll
+C:\Users\seong\source\repos\SpringAopStudy\SpringAopStudy\bin\Debug\SpringAopStudy.Core.pdb

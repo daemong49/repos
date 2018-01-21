@@ -4,22 +4,37 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using SpringAopStudy.Core;
+
 namespace SpringAopStudy
 {
-    public interface ICommand
+    public interface ICommand<T>
     {
-        object Execute(object context);
-
+        T Execute(DateTime context);
+        Func<DateTime, T> BusinessFunc { get; set; }
     }
 
-    public class ServiceCommand : ICommand
+    public class ServiceCommand<T> : ICommand<T>
     {
-        public object Execute(object context)
+        public ServiceCommand()
         {
-            Console.Out.WriteLine($"Service implementaion : {context}");
+            _id = Guid.NewGuid().ToString();
+            
+        }
+
+        private string _id = string.Empty ;
+
+        public Func<DateTime, T> BusinessFunc { get; set; }
+
+        public T Execute(DateTime  context)
+        {
+            Console.Out.WriteLine($"Service implementaion : {_id}");
+
+            var result = BusinessFunc(context);
             //throw new IndexOutOfRangeException("IndexOutOfRangeException");
             //throw new FormatException("FormatException");
-            return DateTime.Now;
+            return result; 
         }
+
     }
 }
