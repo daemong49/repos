@@ -18,7 +18,7 @@ namespace SpringAopStudy
         {
             Console.Out.WriteLine($"Service implementaion : {context}");
             //throw new IndexOutOfRangeException("IndexOutOfRangeException");
-            throw new FormatException("FormatException");
+            //throw new FormatException("FormatException");
             return DateTime.Now;
         }
     }
