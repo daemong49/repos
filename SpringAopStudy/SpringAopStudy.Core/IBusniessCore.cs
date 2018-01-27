@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace SpringAopStudy.Core
 {
-    public interface IBusinessCore<T>
+    public interface IBusinessCore
     {
-         T Send(DateTime execDate);
+         double Send(double num);
     }
 
 

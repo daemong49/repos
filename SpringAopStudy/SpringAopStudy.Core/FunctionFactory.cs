@@ -4,15 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace SpringAopStudy.Core
 {
-    public class FunctionFactory<T>
+    public class FunctionFactory
     {
-        public IBusinessCore<T> BusinessCore { get; set; }
+        
 
-        public Func<DateTime , T> GetBusinessFunc()
+
+        public Func<double , double> GetBusinessFunc()
         {
-            return BusinessCore.Send;
+            return null;
         }
 
        

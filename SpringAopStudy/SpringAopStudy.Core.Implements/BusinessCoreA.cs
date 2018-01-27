@@ -8,22 +8,25 @@ using SpringAopStudy.Core;
 
 namespace SpringAopStudy.Core.Implements
 {
-    public class BusinessCoreA : IBusinessCore<double>
+    public class BusinessCoreA : IBusinessCore
     {
-        public double Send(DateTime execDate)
+        public double Send(double num)
         {
-            
-            var totalDays = (DateTime.Now - execDate).TotalDays;
-            return totalDays;
+            var result = num + 1;
+
+            return result;
         }
     }
 
-    public class BusinessCoreB : IBusinessCore<double>
+
+
+    public class BusinessCoreB : IBusinessCore
     {
-        public double Send(DateTime execDate)
+        public double Send(double num)
         {
-            var totalHours = (DateTime.Now - execDate).TotalHours;
-            return totalHours;
+            double result = Math.Pow(num, 2);
+
+            return result;
         }
     }
 }

@@ -4,24 +4,35 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using Spring.Context;
 using SpringAopStudy.Core;
 
 namespace SpringAopStudy.Object
 {
-    public class ObjectFactory<T>
+    public interface IObjectFactory
     {
+        IApplicationContext Context { get; set; }
 
-        public IBusinessCore<T> BusinessCore { get; set; }
+        IFuncItem ItemBuild(double number);
+    }
 
+    public class ObjectFactory : IObjectFactory
+    {
+        
+        public IApplicationContext Context { get; set; }
 
-        public ServiceCommand<T> CreateInstance()
+        public IFuncItem ItemBuild(double number)
         {
-            var commander = new ServiceCommand<T>
+            var funcItem = Context.GetObject<IFuncItem>("funcItem");
+
+            funcItem.Number = number;
+
+            funcItem.BusinessFunc = (n) => 
             {
-                BusinessFunc = BusinessCore.Send
+                return  Math.Pow(n, 2);
             };
 
-            return commander;
+            return funcItem;
         }
 
     }

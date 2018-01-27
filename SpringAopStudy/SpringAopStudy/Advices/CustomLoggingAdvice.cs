@@ -9,6 +9,7 @@ using Spring.Aop;
 using Spring.Core;
 using log4net;
 using System.Reflection;
+using System.Diagnostics;
 
 namespace SpringAopStudy.Advices
 {
@@ -19,17 +20,14 @@ namespace SpringAopStudy.Advices
         public object Invoke(IMethodInvocation invocation)
         {
             object returnValue = null;
-            
-            _logger.Info($"Advice executing: calling the advice method...");
+            Stopwatch stopwatch = new Stopwatch();
+            stopwatch.Start();
+           
+            returnValue = invocation.Proceed();
 
-            try
-            {
-                returnValue = invocation.Proceed();
-            }
-            catch { }
-            
-            
-            _logger.Info($"Advice executed: adviced method returned {returnValue}");
+            stopwatch.Stop();
+            //_logger.Info($"{invocation.Method.Name} Excuted:{stopwatch.Elapsed.Milliseconds.ToString("n0")}");
+
 
             return returnValue;
         }
@@ -77,12 +75,15 @@ namespace SpringAopStudy.Advices
         ILog _logger = LogManager.GetLogger(typeof(CustomLoggingThrowsAdvice));
         public void AfterThrowing(IndexOutOfRangeException ex)
         {
-            _logger.Error($"{ex.Message}");
+            _logger.Error($"IndexOutOfRangeException : {ex.Message}");
+
+           
         }
 
-        public void AfterThrowing(FormatException ex)
+        public void AfterThrowing(Exception ex)
         {
             _logger.Error($"{ex.Message}");
+        
         }
     }
 

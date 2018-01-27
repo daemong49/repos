@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2020
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsServiceTest", "WindowsServiceTest\WindowsServiceTest.csproj", "{0C0707AB-83D1-41C9-B2D5-E9CD7D7FAD95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceHost", "ServiceHost\ServiceHost.csproj", "{5FA7CA87-0364-4A82-BB06-DB60D8FB20CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C0707AB-83D1-41C9-B2D5-E9CD7D7FAD95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C0707AB-83D1-41C9-B2D5-E9CD7D7FAD95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C0707AB-83D1-41C9-B2D5-E9CD7D7FAD95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C0707AB-83D1-41C9-B2D5-E9CD7D7FAD95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FA7CA87-0364-4A82-BB06-DB60D8FB20CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FA7CA87-0364-4A82-BB06-DB60D8FB20CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FA7CA87-0364-4A82-BB06-DB60D8FB20CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FA7CA87-0364-4A82-BB06-DB60D8FB20CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EF02B8E7-7DAB-4C9B-B31C-3DEC8CCD6791}
+	EndGlobalSection
+EndGlobal
